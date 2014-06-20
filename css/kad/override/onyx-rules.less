@@ -1,0 +1,94 @@
+.onyx-button.onyx-simple {
+    font-size: @onyx-font-size-large;
+    color: @onyx-toolbar-text-color;
+    margin-top: -5px;
+	background: none;
+    border: none;
+    box-shadow: none;
+}
+.onyx-button.onyx-simple.narrow {
+    padding-left: 0px;
+}
+
+.onyx-button.onyx-simple.active, .onyx-button.onyx-simple.pressed {
+	background:none;
+	border:none;
+	box-shadow:none;
+}
+
+.onyx-button.onyx-simple:active:hover:not([disabled]) {
+	background:none;
+	border:none;
+	box-shadow:none;
+}
+
+.onyx-toolbar {
+    border: none;
+}
+
+.onyx-toolbar .onyx-simple.left {
+    margin-left: -10px;
+}
+.onyx-toolbar .onyx-simple.right {
+    margin-right: -10px;
+}
+
+
+/** popup*/
+.onyx-popup-user{
+    padding: 12px 0 18px 0;
+    border-radius: 5px;
+    border: 1px solid #666;
+    width: 90%;
+    max-width: 430px;
+}
+
+.onyx-popup-user .onyx-radiobutton{
+    color: #ddd;
+}
+
+.onyx-popup-user.narrow {
+  max-width: 200px;
+}
+
+.onyx-popup-user.wide {
+  max-width: 500px;
+}
+.onyx-groupbox .label {
+    line-height: 30px;
+}
+.onyx-popup-title{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #555;
+    text-align: left;
+    color: @onyx-toolbar-text-color;
+}
+.onyx-popup-bottom{
+    margin-top: 20px;
+    text-align: center;
+}
+.onyx-popup-title.text,.onyx-popup-title .text{
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    color: @onyx-toolbar-text-color;
+}
+.onyx-popup-title.button .center{
+    text-align: center;
+}
+.onyx-popup .onyx-groupbox > * {
+	border:none;
+    border-bottom: 1px solid #555;
+    color: @onyx-toolbar-text-color;
+    padding: 10px;
+}
+
+.onyx-alert {
+    background-color: @onyx-popup-background;
+    color: @onyx-text-color;
+    width: 240px; height: 100px; position: fixed; padding: 30px 20px 15px 20px;
+}
+.enyo-gridlist-row {
+    background: transparent;
+}
+

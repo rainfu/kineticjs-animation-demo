@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Kineticjs-animation-demo</title>
+    <meta name="author" content="rain.fu">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,minimum-scale=1, user-scalable=no" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+        <style type="text/css">
+            html, body {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                background: #3f3f48 url("kad/background/bg.gif") repeat;
+                overflow: hidden;
+            }
+            #main {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+            #splash {
+                color:white;
+                width: 620px;
+                min-width: 620px;
+                height: 300px;
+                min-height: 300px;
+                text-align: center;
+                vertical-align: middle;
+                overflow: hidden;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+            #error {
+                position: absolute;
+                top: 230px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: #aaa;
+                font-weight: 600;
+            }
+        </style>
+	</head>
+	<body class="enyo-unselectable">
+        <div id="main">
+             <div id="splash">
+                 <!--[if lt IE 9]><div id='error'>载入失败，请先升级<br><br>您的浏览器至IE9+</div><![endif]-->
+                 <img alt="splash" src = "kad/splash.png" id="splashimg"/>
+             </div>
+        </div>
+	<link href="app.css" media="screen" rel="stylesheet" type="text/css"><script src="app.js" type="text/javascript"></script>
+	</body>
+</html>
