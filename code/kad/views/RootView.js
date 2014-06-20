@@ -120,27 +120,27 @@ enyo.kind({
     playAudio: function (type) {
         if (type == 'bg') {
             if (app.settings.get('isBgSound')) {
-                var bgMedia = ciiat.Utils.playAudio(this.$.bgSound, app.getRoot() + 'amblyopia/audios/gamebg.mp3', "/android_asset/www/amblyopia/audios/gamebg.mp3");
+                var bgMedia = ciiat.Utils.playAudio(this.$.bgSound, app.getRoot() + 'kad/audios/gamebg.mp3', "/android_asset/www/kad/audios/gamebg.mp3");
                 app.setBgMedia(bgMedia);
             }
         }
         else {
             if (app.settings.get('isSoundEffect')) {
                 if (type == 'click') {
-                    ciiat.Utils.playAudio(this.$.clickSound, app.getRoot() + 'amblyopia/audios/click.mp3', "/android_asset/www/amblyopia/audios/click.mp3");
+                    ciiat.Utils.playAudio(this.$.clickSound, app.getRoot() + 'kad/audios/click.mp3', "/android_asset/www/kad/audios/click.mp3");
                 }
                 else if (type == 'success') {
-                    ciiat.Utils.playAudio(this.$.successSound, app.getRoot() + 'amblyopia/audios/success.mp3', "/android_asset/www/amblyopia/audios/success.mp3");
+                    ciiat.Utils.playAudio(this.$.successSound, app.getRoot() + 'kad/audios/success.mp3', "/android_asset/www/kad/audios/success.mp3");
                 }
                 else if (type == 'wrong') {
-                    ciiat.Utils.playAudio(this.$.wrongSound, app.getRoot() + 'amblyopia/audios/wrong.mp3', "/android_asset/www/amblyopia/audios/wrong.mp3");
+                    ciiat.Utils.playAudio(this.$.wrongSound, app.getRoot() + 'kad/audios/wrong.mp3', "/android_asset/www/kad/audios/wrong.mp3");
                 }
                
                 else if (type == 'victory') {
-                    ciiat.Utils.playAudio(this.$.victorySound, app.getRoot() + 'amblyopia/audios/victory.mp3', "/android_asset/www/amblyopia/audios/victory.mp3");
+                    ciiat.Utils.playAudio(this.$.victorySound, app.getRoot() + 'kad/audios/victory.mp3', "/android_asset/www/kad/audios/victory.mp3");
                 }
                 else if (type == 'sclick') {
-                    ciiat.Utils.playAudio(this.$.sclickSound, app.getRoot() + 'amblyopia/audios/sclick.mp3', "/android_asset/www/amblyopia/audios/sclick.mp3");
+                    ciiat.Utils.playAudio(this.$.sclickSound, app.getRoot() + 'kad/audios/sclick.mp3', "/android_asset/www/kad/audios/sclick.mp3");
                 }
               
             }
@@ -148,7 +148,7 @@ enyo.kind({
     },
     stopAudio: function (type) {
         if (type == 'bg') {
-            ciiat.Utils.stopAudio(this.$.bgSound, app.getRoot() + 'amblyopia/audios/gamebg.mp3', "/android_asset/www/amblyopia/audios/gamebg.mp3");
+            ciiat.Utils.stopAudio(this.$.bgSound, app.getRoot() + 'kad/audios/gamebg.mp3', "/android_asset/www/kad/audios/gamebg.mp3");
         }
     }
 });
